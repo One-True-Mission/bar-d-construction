@@ -1,0 +1,36 @@
+# Bar D Construction & Land Services
+
+> Locally owned, family operated construction company in Stephenville, Texas (Erath County). Builds turnkey metal buildings ground up, works as a general contractor on any ground-up build, and handles land clearing, demolition, concrete, fencing, arenas, welding, drainage, and roll-off dumpster rental within 75 miles of Stephenville.
+
+## Facts
+
+- Business name: Bar D Construction & Land Services
+- Owner: Ryan Davidson
+- Phone: (512) 525-6475
+- Base: Stephenville, Texas, Erath County
+- Service area: 75 miles in every direction from Stephenville
+- Years: 12 years in the industry, 7+ years operating as Bar D
+- Structure: locally owned and family operated; work executed through fully licensed and insured subcontractors coordinated by Bar D as the general contractor
+- Recognition: nominated for Best of Erath 2026, Home and Services category
+- Primary service: ground-up turnkey metal building construction (steel structure, welding, site work, foundation, and every licensed finish trade under one contract)
+- Distinctive build: two-container shipping container retreat with three private suites, bunk room, kitchen, living area, bathroom, covered porch, and overlook deck, delivered serviced with water, septic, AC, and heat
+- Dumpster rental sizes: 11 yard, 15 yard, 18 yard roll-offs, delivered, picked up, and dumped; daily, weekly, or extended rental; same-day haul off and return; discounted pricing for multiple haul-offs
+- Septic: coordinated through TCEQ-licensed installers, permit pulled under the installer's license
+- Not offered: swimming pools. That is the only exclusion.
+- Quotes: free on every job, always. No pricing is published; every price is quoted after a site walk.
+- Language: English
+- Positioning in their own words: "No project is too big. No detail is too small." and "Quality work done right the first time."
+
+## Full service list
+
+Metal buildings and construction, general contracting, shipping container conversions, land services and land improvements, land clearing, demolition, concrete and driveways and sidewalks and decking, fencing (pipe, creosote, ranch), arenas, custom entrances, welding and fabrication, drainage correction, barns and outbuildings, septic via licensed subcontractors, roll-off dumpster rental.
+
+## Pages
+
+- [Home](https://one-true-mission.github.io/bar-d-construction/): What Bar D does, the service range, recent project photos, and the service area.
+- [Metal Buildings](https://one-true-mission.github.io/bar-d-construction/metal-buildings): The primary service. What turnkey includes, the build sequence, and the detail work (Austin stone wainscot, roll-up doors, trim and gutters, crow's foot trusses on 6x6 columns, tie-ins to existing structures, concrete poured in the same build). Also covers shipping container conversions.
+- [Services](https://one-true-mission.github.io/bar-d-construction/services): All twelve services in detail, the licensed-trade coordination model, the pools exclusion, and the FAQ answering how far they travel, whether they build from scratch, what turnkey means, septic handling, licensing and insurance, cost questions, dumpster-only rentals, standalone land clearing, and scheduling.
+- [Dumpster Rental](https://one-true-mission.github.io/bar-d-construction/dumpster-rental): Roll-off sizes, how the rental works, common uses, and rental terms.
+- [Projects](https://one-true-mission.github.io/bar-d-construction/projects): Before and after sliders plus project photos grouped by metal buildings, land and concrete and fencing, and specialty container builds.
+- [About](https://one-true-mission.github.io/bar-d-construction/about): The growth story from land services to full general contracting, the family-operated structure, and the Best of Erath 2026 nomination.
+- [Contact](https://one-true-mission.github.io/bar-d-construction/contact): Free quote form with project type, project location, rough scope, and timeline fields.
