@@ -1,6 +1,6 @@
 # Bar D Construction & Land Services
 
-> Locally owned, family operated construction company in Stephenville, Texas (Erath County). Builds turnkey metal buildings ground up, works as a general contractor on any ground-up build, and handles land clearing, demolition, concrete, fencing, arenas, welding, drainage, and roll-off dumpster rental within 75 miles of Stephenville.
+> Locally owned, family operated construction company in Stephenville, Texas (Erath County). Builds turnkey metal buildings ground up, converts shipping containers into livable space, works as a general contractor, and handles concrete, dirt work, fencing, riding arenas, land clearing, demolition, and roll-off dumpster rental within 75 miles of Stephenville.
 
 ## Facts
 
@@ -13,23 +13,41 @@
 - Structure: locally owned and family operated; work executed through fully licensed and insured subcontractors coordinated by Bar D as the general contractor
 - Recognition: nominated for Best of Erath 2026, Home and Services category
 - Primary service: ground-up turnkey metal building construction (steel structure, welding, site work, foundation, and every licensed finish trade under one contract)
-- Distinctive build: two-container shipping container retreat with three private suites, bunk room, kitchen, living area, bathroom, covered porch, and overlook deck, delivered serviced with water, septic, AC, and heat
 - Dumpster rental sizes: 11 yard, 15 yard, 18 yard roll-offs, delivered, picked up, and dumped; daily, weekly, or extended rental; same-day haul off and return; discounted pricing for multiple haul-offs
-- Septic: coordinated through TCEQ-licensed installers, permit pulled under the installer's license
+- Does not build swimming pools, though it does pour the concrete decking around them
 - Quotes: free on every job, always. No pricing is published; every price is quoted after a site walk.
 - Language: English
 - Positioning in their own words: "No project is too big. No detail is too small." and "Quality work done right the first time."
 
-## Full service list
+## Six main services
 
-Metal buildings and construction, general contracting, shipping container conversions, land services and land improvements, land clearing, demolition, concrete and driveways and sidewalks and decking, fencing (pipe, creosote, ranch), arenas, custom entrances, welding and fabrication, drainage correction, barns and outbuildings, septic via licensed subcontractors, roll-off dumpster rental.
+1. **Metal Buildings** — shops, horse barns, carports, RV covers, commercial buildings, and interior finish-out including cedar stalls. Built turnkey from pad prep through finish trades.
+2. **Container Modifications** — shipping containers cut, framed, insulated, and finished as livable space with covered decks, delivered serviced with water, power, AC, and heat.
+3. **Dumpster Rental** — 11, 15, and 18 yard roll-offs, standalone or bundled with other work.
+4. **Concrete & Dirt Work** — driveways, slabs, sidewalks, stamped and decorative decking, pool surrounds, retaining walls, building pad prep, grading, and drainage correction.
+5. **Fencing & Arenas** — pipe fence, creosote post fence, ranch and field fence, gates, cattle guards, custom welded entrances, sorting pens, and riding arenas built from cleared ground to finished rail and lights.
+6. **General Contracting** — ground-up builds, additions, and remodels with every licensed trade coordinated by Bar D. Also land clearing, demolition, drainage correction, welding and fabrication, and one-off specialty work.
+
+## Documented builds on the site
+
+Each of these is shown photographically at every stage, from bare ground to finished:
+
+- **40' x 50' shop with covered patio** — drive and slab poured, steel set and welded, closed in with tan panel, Austin stone wainscot, and roll-up doors (Metal Buildings page)
+- **Horse barn with stalls and wraparound covers** — posts set in open pasture through cedar stalls, concrete breezeway, and lighting (Metal Buildings page)
+- **50' x 50' RV cover and covered patio** — pad and slab through finished open-span cover with a fifth wheel parked under it (Metal Buildings page)
+- **Two-container weekend retreat** — two containers on a bluff turned into three private suites, a bunk room, kitchen, living area, covered porch, and overlook deck, with a walkthrough video (Container Modifications page)
+- **Stamped concrete pool decking** — forms and steel on a slope through a finished continuous stamped pour (Concrete & Dirt Work page)
+- **Riding arena** — cleared and graded ground through fencing, sorting pens, and arena lighting, with a before and after slider (Fencing & Arenas page)
 
 ## Pages
 
-- [Home](https://one-true-mission.github.io/bar-d-construction/): What Bar D does, the service range, recent project photos, and the service area.
-- [About](https://one-true-mission.github.io/bar-d-construction/about.html): The growth story from land services to full general contracting, the family-operated structure, and the Best of Erath 2026 nomination.
-- [Metal Buildings](https://one-true-mission.github.io/bar-d-construction/metal-buildings.html): The primary service. What turnkey includes, the build sequence, and the detail work (Austin stone wainscot, roll-up doors, trim and gutters, crow's foot trusses on 6x6 columns, tie-ins to existing structures, concrete poured in the same build). Also covers shipping container conversions.
+- [Home](https://one-true-mission.github.io/bar-d-construction/): What Bar D does, the six services, a rotating gallery of recent work, and the service area.
+- [About](https://one-true-mission.github.io/bar-d-construction/about.html): The family behind the business, the growth story from land services to full general contracting, and the Best of Erath 2026 nomination.
+- [Services](https://one-true-mission.github.io/bar-d-construction/services.html): Hub linking to all service pages, the licensed-trade coordination model, general contracting and the other standalone services, and the FAQ.
+- [Metal Buildings](https://one-true-mission.github.io/bar-d-construction/metal-buildings.html): The primary build. Three complete builds shown stage by stage, what turnkey includes, and the detail work.
+- [Container Modifications](https://one-true-mission.github.io/bar-d-construction/container-modifications.html): The two-container retreat shown stage by stage, a walkthrough video, and what container builds are good for.
 - [Dumpster Rental](https://one-true-mission.github.io/bar-d-construction/dumpster-rental.html): Roll-off sizes, how the rental works, common uses, and rental terms.
-- [Services](https://one-true-mission.github.io/bar-d-construction/services.html): All twelve services in detail, the licensed-trade coordination model, and the FAQ answering how far they travel, whether they build from scratch, what turnkey means, septic handling, licensing and insurance, cost questions, dumpster-only rentals, standalone land clearing, and scheduling.
-- [Projects](https://one-true-mission.github.io/bar-d-construction/projects.html): Before and after sliders plus project photos grouped by metal buildings, land and concrete and fencing, and specialty container builds.
+- [Concrete & Dirt Work](https://one-true-mission.github.io/bar-d-construction/concrete-dirt-work.html): A stamped pool deck shown stage by stage, plus why base prep decides whether concrete lasts.
+- [Fencing & Arenas](https://one-true-mission.github.io/bar-d-construction/fencing-arenas.html): Fence types, gates and entrances, and a riding arena shown from raw ground to lights, with a before and after slider.
+- [Projects](https://one-true-mission.github.io/bar-d-construction/projects.html): All six featured builds plus one-off specialty work.
 - [Contact](https://one-true-mission.github.io/bar-d-construction/contact.html): Free quote form with project type, project location, rough scope, and timeline fields.

@@ -23,9 +23,19 @@
       <div class="nav-links">
         <a href="index.html" data-nav="home">Home</a>
         <a href="about.html" data-nav="about">About</a>
-        <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
-        <a href="dumpster-rental.html" data-nav="dumpsters">Dumpsters</a>
-        <a href="services.html" data-nav="services">Services</a>
+        <div class="nav-item">
+          <a href="services.html" class="nav-trigger" data-nav="services">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <a href="services.html" class="dropdown-all">All Services</a>
+              <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
+              <a href="container-modifications.html" data-nav="container-modifications">Container Modifications</a>
+              <a href="dumpster-rental.html" data-nav="dumpsters">Dumpster Rental</a>
+              <a href="concrete-dirt-work.html" data-nav="concrete-dirt-work">Concrete &amp; Dirt Work</a>
+              <a href="fencing-arenas.html" data-nav="fencing-arenas">Fencing &amp; Arenas</a>
+            </div>
+          </div>
+        </div>
         <a href="projects.html" data-nav="projects">Projects</a>
         <a href="contact.html" class="nav-cta">Free Quote</a>
       </div>
@@ -36,9 +46,12 @@
   <aside class="mobile-menu">
     <a href="index.html" data-nav="home">Home</a>
     <a href="about.html" data-nav="about">About</a>
-    <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
-    <a href="dumpster-rental.html" data-nav="dumpsters">Dumpster Rental</a>
     <a href="services.html" data-nav="services">Services</a>
+    <a href="metal-buildings.html" class="mobile-sub" data-nav="metal-buildings">Metal Buildings</a>
+    <a href="container-modifications.html" class="mobile-sub" data-nav="container-modifications">Container Modifications</a>
+    <a href="dumpster-rental.html" class="mobile-sub" data-nav="dumpsters">Dumpster Rental</a>
+    <a href="concrete-dirt-work.html" class="mobile-sub" data-nav="concrete-dirt-work">Concrete &amp; Dirt Work</a>
+    <a href="fencing-arenas.html" class="mobile-sub" data-nav="fencing-arenas">Fencing &amp; Arenas</a>
     <a href="projects.html" data-nav="projects">Projects</a>
     <a href="tel:+15125256475">Call (512) 525-6475</a>
     <a href="contact.html" class="btn btn-primary">Free Quote</a>
@@ -64,11 +77,12 @@
           <li>Semantic HTML with a single main landmark and a logical heading order on every page</li>
           <li>Descriptive alternative text on content images</li>
           <li>Labels tied to every form field, with inline error messages rather than pop-up alerts</li>
-          <li>Keyboard access to the menu and the accordions, with the mobile menu removed from the tab order while it is closed</li>
+          <li>Keyboard access to the menu, the services dropdown, and the accordions, with the mobile menu removed from the tab order while it is closed</li>
           <li>Visible focus outlines on links, buttons, and form fields</li>
           <li>Color choices intended to meet the AA contrast thresholds</li>
           <li>Support for the reduced-motion setting, which stops the scrolling banner, the auto-advancing gallery, and the scroll animations</li>
           <li>Layouts that reflow down to small phone widths without horizontal scrolling</li>
+          <li>Video that does not load or play until you choose to play it</li>
         </ul>
 
         <h2>Where We Know We Are Not Perfect</h2>

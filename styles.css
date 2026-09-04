@@ -184,13 +184,83 @@ section[id] { scroll-margin-top: 92px; }
 .brand img { height: 56px; width: auto; transition: transform 0.25s ease; }
 .brand:hover img { transform: scale(1.04); }
 .nav-links { display: flex; align-items: center; gap: 20px; }
-.nav-links a { font-family: var(--font-display); font-weight: 500; font-size: 0.94rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); padding: 6px 0; position: relative; white-space: nowrap; transition: color 0.2s ease; }
-.nav-links a::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: var(--rust); transition: width 0.25s ease; }
-.nav-links a:hover, .nav-links a.is-active { color: var(--rust-deep); }
-.nav-links a:hover::after, .nav-links a.is-active::after { width: 100%; }
+.nav-links > a,
+.nav-trigger {
+  font-family: var(--font-display); font-weight: 500; font-size: 0.94rem;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink);
+  padding: 6px 0; position: relative; white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.nav-links > a::after,
+.nav-trigger::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 2px;
+  background: var(--rust); transition: width 0.25s ease;
+}
+.nav-links > a:hover, .nav-links > a.is-active,
+.nav-trigger:hover, .nav-trigger.is-active { color: var(--rust-deep); }
+.nav-links > a:hover::after, .nav-links > a.is-active::after,
+.nav-trigger:hover::after, .nav-trigger.is-active::after { width: 100%; }
 .nav-cta { background: var(--rust); color: #fff !important; padding: 10px 20px; border-radius: 8px; font-weight: 600 !important; transition: background 0.2s ease, transform 0.2s ease; }
 .nav-cta::after { display: none; }
 .nav-cta:hover { background: var(--rust-deep); transform: translateY(-2px); }
+
+/* ---------- SERVICES DROPDOWN ----------
+   No JavaScript. :focus-within opens it for keyboard users the same way
+   :hover does for mouse users. The padding-top on .dropdown bridges the gap
+   between the trigger and the panel so the pointer does not fall through it
+   on the way down. */
+.nav-item { position: relative; display: flex; align-items: center; }
+.nav-trigger { display: inline-flex; align-items: center; gap: 7px; }
+.nav-caret {
+  width: 8px; height: 8px; flex-shrink: 0;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+.nav-item:hover .nav-caret,
+.nav-item:focus-within .nav-caret { transform: translateY(1px) rotate(225deg); }
+
+.dropdown {
+  position: absolute; top: 100%; left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  min-width: 248px; padding-top: 14px;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0s linear 0.22s;
+  z-index: 120;
+}
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0s linear 0s;
+}
+.dropdown-inner {
+  background: var(--frame-card);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--rust);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-lift);
+  padding: 10px;
+  display: flex; flex-direction: column;
+}
+.dropdown a {
+  font-family: var(--font-display); font-weight: 500; font-size: 0.92rem;
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink);
+  padding: 11px 14px; border-radius: 7px; white-space: nowrap;
+  transition: background 0.18s ease, color 0.18s ease, padding-left 0.18s ease;
+}
+.dropdown a:hover, .dropdown a.is-active {
+  background: rgba(var(--rust-rgb), 0.1); color: var(--rust-deep); padding-left: 20px;
+}
+.dropdown .dropdown-all {
+  border-bottom: 1px solid var(--line);
+  border-radius: 7px 7px 0 0;
+  margin-bottom: 6px; padding-bottom: 13px;
+  color: var(--rust-deep); font-weight: 600;
+}
+/* Light up the Services trigger when any page inside the dropdown is current */
+.nav-item:has(.dropdown a.is-active) > .nav-trigger { color: var(--rust-deep); }
+.nav-item:has(.dropdown a.is-active) > .nav-trigger::after { width: 100%; }
 
 /* ---------- HAMBURGER ---------- */
 .hamburger { display: none; position: relative; width: 48px; height: 48px; margin-left: auto; z-index: 220; }
@@ -206,7 +276,10 @@ section[id] { scroll-margin-top: 92px; }
    visibility: hidden while closed pulls the links out of the tab order.
    Without it the panel sits offscreen but stays keyboard focusable, so a
    tabbing user lands inside an invisible menu. The 0.4s visibility delay on
-   close lets the slide-out animation finish before it disappears. */
+   close lets the slide-out animation finish before it disappears.
+
+   Service pages are indented under Services rather than hidden behind an
+   accordion. Always visible, no JavaScript, nothing to make accessible. */
 .nav-backdrop { position: fixed; inset: 0; background: rgba(36, 30, 26, 0.6); opacity: 0; pointer-events: none; transition: opacity 0.35s ease; z-index: 200; }
 .nav-backdrop.is-open { opacity: 1; pointer-events: auto; }
 .mobile-menu {
@@ -229,6 +302,17 @@ section[id] { scroll-margin-top: 92px; }
 }
 .mobile-menu a { font-family: var(--font-display); font-weight: 500; font-size: 1.22rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--heading); padding: 14px 0; border-bottom: 1px solid var(--line); transition: color 0.3s ease, padding-left 0.3s ease; }
 .mobile-menu a:hover, .mobile-menu a.is-active { color: var(--rust-deep); padding-left: 10px; }
+.mobile-menu a.mobile-sub {
+  font-size: 1rem; padding: 11px 0 11px 20px; color: var(--ink-soft);
+  border-bottom: 1px solid rgba(56, 48, 42, 0.08);
+  position: relative;
+}
+.mobile-menu a.mobile-sub::before {
+  content: ""; position: absolute; left: 4px; top: 50%;
+  width: 8px; height: 2px; background: var(--rust); opacity: 0.55;
+}
+.mobile-menu a.mobile-sub:hover, .mobile-menu a.mobile-sub.is-active { color: var(--rust-deep); padding-left: 28px; }
+.mobile-menu a.mobile-sub:last-of-type { margin-bottom: 8px; }
 .mobile-menu .btn { margin-top: 24px; width: 100%; }
 .mobile-menu .btn:hover { padding-left: 30px; }
 
@@ -401,12 +485,69 @@ section[id] { scroll-margin-top: 92px; }
    block absorb the leftover height kills it. Works with no caption too. */
 .photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .photo-grid.two-up { grid-template-columns: repeat(2, 1fr); }
+.photo-grid.three-up { grid-template-columns: repeat(3, 1fr); }
 .photo-grid figure { display: flex; flex-direction: column; border-radius: var(--radius-card); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-soft); background: var(--frame-card); transition: transform 0.25s ease, box-shadow 0.25s ease; }
 .photo-grid figure:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
 .photo-grid img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; flex: 0 0 auto; }
 .photo-grid figcaption { flex: 1 1 auto; padding: 14px 16px; font-size: 0.88rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); background: var(--frame-card); border-top: 2px solid var(--rust); }
 /* Caption-free grids (projects page) still need the rust rule under the photo */
 .photo-grid figure:not(:has(figcaption)) img { border-bottom: 2px solid var(--rust); }
+
+/* ============================================================
+   BUILD SEQUENCE
+   A documented job shown in order, dirt to finished. Numbered steps so the
+   sequence reads left to right even when the grid wraps.
+   ============================================================ */
+.build-story + .build-story { margin-top: 64px; padding-top: 64px; border-top: 1px solid var(--line); }
+.build-head { max-width: 760px; margin-bottom: 34px; }
+.build-tag {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.74rem; font-weight: 800; letter-spacing: 0.16em;
+  text-transform: uppercase; color: #fff; background: var(--rust);
+  padding: 6px 14px; border-radius: 30px; margin-bottom: 14px;
+}
+.build-head h3 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin-bottom: 12px; }
+.build-head p { color: var(--ink-soft); }
+.build-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; list-style: none; counter-reset: step; }
+.build-steps.six-up { grid-template-columns: repeat(6, 1fr); }
+.build-steps.four-up { grid-template-columns: repeat(4, 1fr); }
+.build-step {
+  display: flex; flex-direction: column;
+  background: var(--frame-card); border: 1px solid var(--line);
+  border-radius: var(--radius-card); overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.build-step:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
+.build-media { position: relative; }
+.build-media img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-bottom: 3px solid var(--rust); }
+.build-num {
+  position: absolute; top: 10px; left: 10px;
+  font-family: var(--font-display); font-weight: 600; font-size: 0.86rem;
+  letter-spacing: 0.08em; color: #fff; background: rgba(36, 30, 26, 0.82);
+  padding: 4px 10px; border-radius: 6px; border-left: 2px solid var(--amber);
+}
+.build-caption { flex: 1 1 auto; padding: 14px 16px 18px; }
+.build-caption strong {
+  display: block; font-family: var(--font-display); font-weight: 600;
+  font-size: 0.98rem; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--heading); margin-bottom: 5px;
+}
+.build-caption span { display: block; font-size: 0.88rem; color: var(--ink-soft); line-height: 1.5; }
+
+/* ============================================================
+   SELF-HOSTED VIDEO BLOCK
+   ============================================================ */
+.video-frame {
+  position: relative; border-radius: var(--radius-card); overflow: hidden;
+  border: 3px solid var(--rust); box-shadow: var(--shadow-soft);
+  background: var(--media-fallback);
+}
+.video-frame video { width: 100%; height: auto; display: block; background: #241e1a; }
+/* Vertical phone footage: cap the height so a 9:16 clip does not run off the
+   screen on desktop, and letterbox it against the dark frame instead. */
+.video-frame--portrait { max-width: 420px; margin: 0 auto; }
+.video-caption { margin-top: 14px; font-size: 0.94rem; color: var(--ink-soft); text-align: center; }
 
 /* ============================================================
    BEFORE / AFTER SLIDER
@@ -487,10 +628,6 @@ section[id] { scroll-margin-top: 92px; }
 .footer-legal-links { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
 .footer-legal-links a { color: var(--ink-soft); }
 .footer-legal-links a:hover { color: var(--rust-deep); }
-.footer-social { display: flex; gap: 14px; }
-.footer-social a { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(var(--rust-rgb), 0.12); color: var(--rust-deep); transition: background 0.2s ease, color 0.2s ease; }
-.footer-social a:hover { background: var(--rust); color: #fff; }
-.footer-social svg { width: 18px; height: 18px; }
 .otm-credit { color: var(--rust-deep) !important; font-weight: 700; border-bottom: 1px solid rgba(var(--rust-rgb), 0.4); }
 .otm-credit:hover { color: var(--heading) !important; border-color: var(--heading); }
 
@@ -565,7 +702,7 @@ textarea:focus-visible, select:focus-visible {
    ============================================================ */
 @media (max-width: 1240px) {
   .nav-links { gap: 15px; }
-  .nav-links a { font-size: 0.87rem; }
+  .nav-links > a, .nav-trigger { font-size: 0.87rem; }
   .brand img { height: 50px; }
 }
 @media (max-width: 1100px) {
@@ -576,7 +713,8 @@ textarea:focus-visible, select:focus-visible {
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 30px; }
   .values-grid.four-up { grid-template-columns: repeat(2, 1fr); }
-  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .photo-grid, .photo-grid.three-up { grid-template-columns: repeat(2, 1fr); }
+  .build-steps, .build-steps.six-up, .build-steps.four-up { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
   .check-list.two-col { grid-template-columns: 1fr; }
 }
@@ -595,13 +733,15 @@ textarea:focus-visible, select:focus-visible {
   .gallery-stage { height: 340px; }
   .badge-band { grid-template-columns: 1fr; text-align: center; justify-items: center; }
   .badge-copy p { max-width: none; }
+  .build-steps, .build-steps.six-up, .build-steps.four-up { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .container { width: calc(100% - 32px); padding: 36px 22px; }
   .process-grid { grid-template-columns: 1fr; }
   .trust-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
-  .photo-grid, .photo-grid.two-up { grid-template-columns: 1fr; }
+  .photo-grid, .photo-grid.two-up, .photo-grid.three-up { grid-template-columns: 1fr; }
+  .build-steps, .build-steps.six-up, .build-steps.four-up { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { justify-content: center; text-align: center; }
   .field-row { grid-template-columns: 1fr; }
@@ -626,7 +766,8 @@ textarea:focus-visible, select:focus-visible {
   html { scroll-behavior: auto; }
   .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .service-card, .step, .value-card, .size-card, .photo-grid figure { transition: none; }
+  .service-card, .step, .value-card, .size-card, .photo-grid figure, .build-step { transition: none; }
+  .dropdown { transition: none; }
 }
 
 /* ============================================================
@@ -647,6 +788,43 @@ textarea:focus-visible, select:focus-visible {
 .container--deep .section-head p,
 .container--deep .feature-copy p,
 .container--deep .intro-copy p { color: var(--frame-deep-body); }
+
+/* Light cards inside a dark container.
+   .container--deep h2/h3/h4 turns every heading white, which is right for
+   headings sitting directly on the dark card but wrong for headings inside a
+   cream sub-card. White on --frame-card is about 1.05:1, effectively
+   invisible. These put the heading color back for every card that carries its
+   own light background. Add any new light card class here too. */
+.container--deep .value-card h2,
+.container--deep .value-card h3,
+.container--deep .value-card h4,
+.container--deep .service-card h2,
+.container--deep .service-card h3,
+.container--deep .service-card h4,
+.container--deep .step h2,
+.container--deep .step h3,
+.container--deep .step h4,
+.container--deep .size-card h2,
+.container--deep .size-card h3,
+.container--deep .size-card h4,
+.container--deep .flow-step h2,
+.container--deep .flow-step h3,
+.container--deep .flow-step h4,
+.container--deep .faq-item h2,
+.container--deep .faq-item h3,
+.container--deep .faq-item h4,
+.container--deep .form-card h2,
+.container--deep .form-card h3,
+.container--deep .form-card h4,
+.container--deep .build-step h2,
+.container--deep .build-step h3,
+.container--deep .build-step h4 { color: var(--heading); }
+
+/* Captions that sit directly on the dark card, not on a light one */
+.container--deep .ba-caption,
+.container--deep .video-caption,
+.container--deep .area-note { color: var(--frame-deep-body); }
+.container--deep .ba-pending { color: var(--amber); }
 .container--deep .pull-quote { background: rgba(255, 255, 255, 0.06); border-left-color: var(--amber); color: #fff; }
 .accent-line { color: var(--amber); font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; letter-spacing: 0.06em; text-transform: uppercase; }
 .section-foot { text-align: center; margin-top: 42px; }

@@ -53,7 +53,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-dumpsters.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero-dumpster-rental.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
@@ -67,9 +67,19 @@
       <div class="nav-links">
         <a href="index.html" data-nav="home">Home</a>
         <a href="about.html" data-nav="about">About</a>
-        <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
-        <a href="dumpster-rental.html" data-nav="dumpsters">Dumpsters</a>
-        <a href="services.html" data-nav="services">Services</a>
+        <div class="nav-item">
+          <a href="services.html" class="nav-trigger" data-nav="services">Services <span class="nav-caret" aria-hidden="true"></span></a>
+          <div class="dropdown">
+            <div class="dropdown-inner">
+              <a href="services.html" class="dropdown-all">All Services</a>
+              <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
+              <a href="container-modifications.html" data-nav="container-modifications">Container Modifications</a>
+              <a href="dumpster-rental.html" data-nav="dumpsters">Dumpster Rental</a>
+              <a href="concrete-dirt-work.html" data-nav="concrete-dirt-work">Concrete &amp; Dirt Work</a>
+              <a href="fencing-arenas.html" data-nav="fencing-arenas">Fencing &amp; Arenas</a>
+            </div>
+          </div>
+        </div>
         <a href="projects.html" data-nav="projects">Projects</a>
         <a href="contact.html" class="nav-cta">Free Quote</a>
       </div>
@@ -80,9 +90,12 @@
   <aside class="mobile-menu">
     <a href="index.html" data-nav="home">Home</a>
     <a href="about.html" data-nav="about">About</a>
-    <a href="metal-buildings.html" data-nav="metal-buildings">Metal Buildings</a>
-    <a href="dumpster-rental.html" data-nav="dumpsters">Dumpster Rental</a>
     <a href="services.html" data-nav="services">Services</a>
+    <a href="metal-buildings.html" class="mobile-sub" data-nav="metal-buildings">Metal Buildings</a>
+    <a href="container-modifications.html" class="mobile-sub" data-nav="container-modifications">Container Modifications</a>
+    <a href="dumpster-rental.html" class="mobile-sub" data-nav="dumpsters">Dumpster Rental</a>
+    <a href="concrete-dirt-work.html" class="mobile-sub" data-nav="concrete-dirt-work">Concrete &amp; Dirt Work</a>
+    <a href="fencing-arenas.html" class="mobile-sub" data-nav="fencing-arenas">Fencing &amp; Arenas</a>
     <a href="projects.html" data-nav="projects">Projects</a>
     <a href="tel:+15125256475">Call (512) 525-6475</a>
     <a href="contact.html" class="btn btn-primary">Free Quote</a>
@@ -90,7 +103,7 @@
 
   <main>
 
-  <header class="page-hero" style="background-image: url('assets/hero-dumpsters.jpg');">
+  <header class="page-hero" style="background-image: url('assets/hero-dumpster-rental.jpg');">
     <div class="inner">
       <span class="eyebrow">Roll-Off Rental &middot; Stephenville, TX</span>
       <h1>Dumpsters Delivered, <span>Picked Up, and Dumped</span></h1>
@@ -103,7 +116,7 @@
     <div class="container reveal">
       <div class="feature-grid">
         <div class="feature-media">
-          <img src="assets/dumpster-main.jpg" alt="Roll off dumpster delivered to a residential driveway" width="1100" height="800" loading="lazy" decoding="async">
+          <img src="assets/dumpster-feature-1.jpg" alt="Roll off dumpster delivered to a residential driveway" width="1280" height="720" loading="lazy" decoding="async">
         </div>
         <div class="feature-copy">
           <span class="eyebrow">Simple Rental, No Runaround</span>
@@ -218,7 +231,7 @@
           <a href="contact.html" class="btn btn-primary">Reserve a Dumpster</a>
         </div>
         <div class="split-media">
-          <img src="assets/dumpster-terms.jpg" alt="Roll off dumpster loaded with construction debris ready for haul off" width="1280" height="720" loading="lazy" decoding="async">
+          <img src="assets/dumpster-feature-2.jpg" alt="Roll off dumpster loaded with construction debris ready for haul off" width="1280" height="720" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -260,11 +273,11 @@
         <h4>Services</h4>
         <ul>
           <li><a href="metal-buildings.html">Metal Buildings</a></li>
-          <li><a href="services.html#general-contracting">General Contracting</a></li>
-          <li><a href="services.html#land-clearing">Land Clearing</a></li>
-          <li><a href="services.html#concrete">Concrete &amp; Driveways</a></li>
-          <li><a href="services.html#fencing">Fencing &amp; Arenas</a></li>
+          <li><a href="container-modifications.html">Container Modifications</a></li>
           <li><a href="dumpster-rental.html">Dumpster Rental</a></li>
+          <li><a href="concrete-dirt-work.html">Concrete &amp; Dirt Work</a></li>
+          <li><a href="fencing-arenas.html">Fencing &amp; Arenas</a></li>
+          <li><a href="services.html#other-services">General Contracting</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -272,7 +285,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html#faq">FAQ</a></li>
+          <li><a href="services.html">All Services</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Free Quote</a></li>
           <li><a href="warranty.html">Workmanship</a></li>
