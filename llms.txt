@@ -1,6 +1,6 @@
 # Bar D Construction & Land Services
 
-> Locally owned, family operated construction company in Stephenville, Texas (Erath County). Builds turnkey metal buildings ground up, converts shipping containers into livable space, works as a general contractor, and handles concrete, dirt work, fencing, riding arenas, land clearing, demolition, and roll-off dumpster rental within 75 miles of Stephenville.
+> Locally owned, family operated construction company in Stephenville, Texas (Erath County). Builds turnkey metal buildings ground up, converts shipping containers into livable space, works as a general contractor, and handles concrete, dirt work, fencing, riding arenas, land clearing, demolition with haul off, and roll-off dumpster rental within 75 miles of Stephenville.
 
 ## Facts
 
@@ -23,10 +23,10 @@
 
 1. **Metal Buildings** — shops, horse barns, carports, RV covers, commercial buildings, and interior finish-out including cedar stalls. Built turnkey from pad prep through finish trades.
 2. **Container Modifications** — shipping containers cut, framed, insulated, and finished as livable space with covered decks, delivered serviced with water, power, AC, and heat.
-3. **Dumpster Rental** — 11, 15, and 18 yard roll-offs, standalone or bundled with other work.
+3. **Demolition & Dumpsters** — demolition of barns, sheds, slabs, fence line, and structures with haul off included, plus standalone 11, 15, and 18 yard roll-off rental.
 4. **Concrete & Dirt Work** — driveways, slabs, sidewalks, stamped and decorative decking, pool surrounds, retaining walls, building pad prep, grading, and drainage correction.
 5. **Fencing & Arenas** — pipe fence, creosote post fence, ranch and field fence, gates, cattle guards, custom welded entrances, sorting pens, and riding arenas built from cleared ground to finished rail and lights.
-6. **General Contracting** — ground-up builds, additions, and remodels with every licensed trade coordinated by Bar D. Also land clearing, demolition, drainage correction, welding and fabrication, and one-off specialty work.
+6. **General Contracting** — ground-up builds, additions, and remodels with every licensed trade coordinated by Bar D. Also land clearing, drainage correction, welding and fabrication, and one-off specialty work.
 
 ## Documented builds on the site
 
@@ -46,7 +46,7 @@ Each of these is shown photographically at every stage, from bare ground to fini
 - [Services](https://one-true-mission.github.io/bar-d-construction/services.html): Hub linking to all service pages, the licensed-trade coordination model, general contracting and the other standalone services, and the FAQ.
 - [Metal Buildings](https://one-true-mission.github.io/bar-d-construction/metal-buildings.html): The primary build. Three complete builds shown stage by stage, what turnkey includes, and the detail work.
 - [Container Modifications](https://one-true-mission.github.io/bar-d-construction/container-modifications.html): The two-container retreat shown stage by stage, a walkthrough video, and what container builds are good for.
-- [Dumpster Rental](https://one-true-mission.github.io/bar-d-construction/dumpster-rental.html): Roll-off sizes, how the rental works, common uses, and rental terms.
+- [Demolition & Dumpsters](https://one-true-mission.github.io/bar-d-construction/dumpster-rental.html): Demolition with haul off included, roll-off sizes, how the rental works, common uses, and rental terms.
 - [Concrete & Dirt Work](https://one-true-mission.github.io/bar-d-construction/concrete-dirt-work.html): A stamped pool deck shown stage by stage, plus why base prep decides whether concrete lasts.
 - [Fencing & Arenas](https://one-true-mission.github.io/bar-d-construction/fencing-arenas.html): Fence types, gates and entrances, and a riding arena shown from raw ground to lights, with a before and after slider.
 - [Projects](https://one-true-mission.github.io/bar-d-construction/projects.html): All six featured builds plus one-off specialty work.
