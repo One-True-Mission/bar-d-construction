@@ -41,13 +41,13 @@ Each of these is shown photographically at every stage, from bare ground to fini
 
 ## Pages
 
-- [Home](https://one-true-mission.github.io/bar-d-construction/): What Bar D does, the six services, a rotating gallery of recent work, and the service area.
-- [About](https://one-true-mission.github.io/bar-d-construction/about.html): The family behind the business, the growth story from land services to full general contracting, and the Best of Erath 2026 nomination.
-- [Services](https://one-true-mission.github.io/bar-d-construction/services.html): Hub linking to all service pages, the licensed-trade coordination model, general contracting and the other standalone services, and the FAQ.
-- [Metal Buildings](https://one-true-mission.github.io/bar-d-construction/metal-buildings.html): The primary build. Three complete builds shown stage by stage, what turnkey includes, and the detail work.
-- [Container Modifications](https://one-true-mission.github.io/bar-d-construction/container-modifications.html): The two-container retreat shown stage by stage, a walkthrough video, and what container builds are good for.
-- [Demolition & Dumpsters](https://one-true-mission.github.io/bar-d-construction/dumpster-rental.html): Demolition with haul off included, roll-off sizes, how the rental works, common uses, and rental terms.
-- [Concrete & Dirt Work](https://one-true-mission.github.io/bar-d-construction/concrete-dirt-work.html): A stamped pool deck shown stage by stage, plus why base prep decides whether concrete lasts.
-- [Fencing & Arenas](https://one-true-mission.github.io/bar-d-construction/fencing-arenas.html): Fence types, gates and entrances, and a riding arena shown from raw ground to lights, with a before and after slider.
-- [Projects](https://one-true-mission.github.io/bar-d-construction/projects.html): All six featured builds plus one-off specialty work.
-- [Contact](https://one-true-mission.github.io/bar-d-construction/contact.html): Free quote form with project type, project location, rough scope, and timeline fields.
+- [Home](https://bardconstructiontx.com/): What Bar D does, the six services, a rotating gallery of recent work, and the service area.
+- [About](https://bardconstructiontx.com/about.html): The family behind the business, the growth story from land services to full general contracting, and the Best of Erath 2026 nomination.
+- [Services](https://bardconstructiontx.com/services.html): Hub linking to all service pages, the licensed-trade coordination model, general contracting and the other standalone services, and the FAQ.
+- [Metal Buildings](https://bardconstructiontx.com/metal-buildings.html): The primary build. Three complete builds shown stage by stage, what turnkey includes, and the detail work.
+- [Container Modifications](https://bardconstructiontx.com/container-modifications.html): The two-container retreat shown stage by stage, a walkthrough video, and what container builds are good for.
+- [Demolition & Dumpsters](https://bardconstructiontx.com/dumpster-rental.html): Demolition with haul off included, roll-off sizes, how the rental works, common uses, and rental terms.
+- [Concrete & Dirt Work](https://bardconstructiontx.com/concrete-dirt-work.html): A stamped pool deck shown stage by stage, plus why base prep decides whether concrete lasts.
+- [Fencing & Arenas](https://bardconstructiontx.com/fencing-arenas.html): Fence types, gates and entrances, and a riding arena shown from raw ground to lights, with a before and after slider.
+- [Projects](https://bardconstructiontx.com/projects.html): All six featured builds plus one-off specialty work.
+- [Contact](https://bardconstructiontx.com/contact.html): Free quote form with project type, project location, rough scope, and timeline fields.

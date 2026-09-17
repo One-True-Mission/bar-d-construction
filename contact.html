@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get a Free Quote | Bar D Construction, Stephenville TX</title>
   <meta name="description" content="Request a free quote from Bar D Construction in Stephenville, TX. Metal buildings, container builds, concrete, dirt work, fencing, and dumpster rental.">
-  <link rel="canonical" href="https://one-true-mission.github.io/bar-d-construction/contact.html">
+  <link rel="canonical" href="https://bardconstructiontx.com/contact.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
 
@@ -13,15 +13,15 @@
   <meta property="og:site_name" content="Bar D Construction &amp; Land Services">
   <meta property="og:title" content="Get a Free Quote | Bar D Construction, Stephenville TX">
   <meta property="og:description" content="Request a free quote from Bar D Construction in Stephenville, TX. Metal buildings, container builds, concrete, dirt work, fencing, and dumpster rental.">
-  <meta property="og:url" content="https://one-true-mission.github.io/bar-d-construction/contact.html">
-  <meta property="og:image" content="https://one-true-mission.github.io/bar-d-construction/assets/og-image.jpg">
+  <meta property="og:url" content="https://bardconstructiontx.com/contact.html">
+  <meta property="og:image" content="https://bardconstructiontx.com/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Bar D Construction &amp; Land Services">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Get a Free Quote | Bar D Construction, Stephenville TX">
   <meta name="twitter:description" content="Request a free quote from Bar D Construction in Stephenville, TX. Metal buildings, container builds, concrete, dirt work, fencing, and dumpster rental.">
-  <meta name="twitter:image" content="https://one-true-mission.github.io/bar-d-construction/assets/og-image.jpg">
+  <meta name="twitter:image" content="https://bardconstructiontx.com/assets/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,10 +120,16 @@
           <h2>Tell Us About the Project</h2>
           <p class="form-intro">The more you can give us here, the more useful our first phone call will be.</p>
 
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" data-validate
+          <form action="https://formspree.io/f/meaoqlbd" method="POST" data-validate
                 toolname="request_bar_d_quote"
                 tooldescription="Request a free construction quote from Bar D Construction & Land Services in Stephenville, Texas, for metal buildings, container modifications, general contracting, concrete and dirt work, fencing and arenas, land clearing, demolition, or roll-off dumpster rental within 75 miles of Stephenville.">
             <input type="hidden" name="_subject" value="New quote request from the Bar D website">
+            <!-- Fallback only. script.js submits by fetch and does its own redirect,
+                 so this never fires on a normal submission. It exists in case
+                 JavaScript fails to load. -->
+            <input type="hidden" name="_next" value="https://bardconstructiontx.com/thank-you.html">
+            <!-- Honeypot: bots fill it, people never see it -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
 
             <div class="form-banner" role="alert"></div>
 
@@ -184,8 +190,9 @@
 
             <div class="field">
               <label for="project-scope">Rough Size or Scope</label>
-              <input type="text" id="project-scope" name="project_scope" placeholder="Square footage, acreage, or a short description"
+              <input type="text" id="project-scope" name="project_scope" placeholder="Square footage, acreage, or a short description" required
                      tool-param-description="Approximate size of the job: building square footage, acreage to clear, or a short description.">
+              <span class="field-error">Please give us a rough size or a short description.</span>
             </div>
 
             <div class="field">
@@ -202,8 +209,9 @@
 
             <div class="field">
               <label for="details">Project Details</label>
-              <textarea id="details" name="details" placeholder="What are you trying to build, and what is the land like right now?"
+              <textarea id="details" name="details" placeholder="What are you trying to build, and what is the land like right now?" required
                         tool-param-description="Free text description of the project, the site conditions, and anything else the contractor should know."></textarea>
+              <span class="field-error">Please tell us a little about the project.</span>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block">Send My Quote Request</button>
