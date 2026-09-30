@@ -4,3 +4,4 @@ BUILD-BRIEF.md
 *.psd
 Thumbs.db
 .DS_Store
+.vscode/settings.json
