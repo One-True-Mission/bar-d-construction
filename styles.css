@@ -362,11 +362,17 @@ section[id] { scroll-margin-top: 92px; }
 
 .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center; }
 .intro-grid.reverse .intro-media { order: 2; }
-.intro-media { position: relative; min-height: 420px; border-radius: var(--radius-card); background: var(--media-fallback); box-shadow: var(--shadow-soft); overflow: hidden; border: 1px solid var(--line); }
-.intro-media img { width: 100%; height: 100%; min-height: 420px; object-fit: cover; }
-.intro-badge { position: absolute; bottom: 22px; left: 22px; background: var(--frame-deep); color: #fff; padding: 16px 22px; border-radius: 10px; border-left: 3px solid var(--amber); box-shadow: var(--shadow-lift); z-index: 2; max-width: 78%; }
+/* The intro image is the Bar D logo on the home and about pages, so the whole
+   image has to stay visible. The badge used to float over the bottom-left
+   corner and covered the business name. It now sits below the image as a
+   nameplate strip, part of the same card, so it can never overlap the logo at
+   any screen width. object-fit: contain keeps the full logo in frame instead
+   of cropping it to fill. */
+.intro-media { position: relative; display: flex; flex-direction: column; border-radius: var(--radius-card); background: var(--frame-card); box-shadow: var(--shadow-soft); overflow: hidden; border: 1px solid var(--line); }
+.intro-media img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
+.intro-badge { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; background: var(--frame-deep); color: #fff; padding: 16px 22px; border-top: 3px solid var(--amber); }
 .intro-badge strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; color: var(--amber); line-height: 1.1; text-transform: uppercase; }
-.intro-badge span { display: block; font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--frame-deep-soft); margin-top: 4px; }
+.intro-badge span { display: block; font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--frame-deep-soft); }
 .intro-copy h2 { margin-bottom: 18px; }
 .intro-copy p { color: var(--ink-soft); }
 .intro-copy p + p { margin-top: 16px; }
@@ -739,6 +745,7 @@ textarea:focus-visible, select:focus-visible {
   .hamburger { display: block; }
   .intro-grid, .feature-grid, .split-callout { grid-template-columns: 1fr; gap: 36px; }
   .intro-grid.reverse .intro-media, .feature-grid.reverse .feature-media { order: 0; }
+  .intro-media { max-width: 480px; width: 100%; margin: 0 auto; }
   .services-grid, .services-grid.two-up, .services-grid.four-up { grid-template-columns: 1fr; }
   .services-detail-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
